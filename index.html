@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeX Africa</title>
+
+    <style>
+        /* =======================
+           BODY WITH BACKGROUND IMAGE
+        ======================= */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+            background-image: url("robotics.jpg.jpeg"); /* 👈 your image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* DARK OVERLAY FOR READABILITY */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        /* =======================
+           HEADER
+        ======================= */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            color: white;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: rgba(0,0,0,0.5);
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* =======================
+           CONTAINER
+        ======================= */
+        .container {
+            max-width: 900px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        /* =======================
+           HERO
+        ======================= */
+        .hero {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            color: #3333cc;
+        }
+
+        .hero p {
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* =======================
+           ANNOUNCEMENT
+        ======================= */
+        .announcement {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* =======================
+           SERVICES
+        ======================= */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #f0f4ff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #3333cc;
+        }
+
+        /* =======================
+           FOOTER
+        ======================= */
+        footer {
+            width: 100%;
+            background-color: #3333cc;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* =======================
+           WHATSAPP
+        ======================= */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo-name">
+            <img src="logo.png" class="logo">
+            <h2 class="company-name">DeX Africa</h2>
+        </div>
+
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="vision.html">Vision</a>
+            <a href="values.html">Core Values</a>
+        </div>
+    </div>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+            <h1>Empowering African Kids with Tech Skills</h1>
+            <p>We train children in Coding, Robotics, AI and Content Creation.</p>
+            <a href="contact.html" class="btn">Register Now</a>
+        </div>
+
+        <!-- ANNOUNCEMENT -->
+        <div class="announcement">
+            8-Week Tech Training for Kids – All Weekends! Limited Slots Available
+        </div>
+
+        <!-- SERVICES -->
+        <h2 style="text-align:center;">Our Services</h2>
+
+        <div class="services">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Learn to build modern websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Robotics</h3>
+                <p>Hands-on robot building experience.</p>
+            </div>
+
+            <div class="card">
+                <h3>Coding</h3>
+                <p>Programming made simple and fun.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 DeX Africa – Inspiring Tech Minds in Africa
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/233505708770" target="_blank" class="whatsapp-btn">
+    💬 chat with us live
+</a>
+
+</body>
+</html>
