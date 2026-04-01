@@ -1,111 +1,240 @@
- <!DOCTYPE html>
-<html>
-    <head>
-       
-    <title> contact us 
-    </title>
-    </head>
-      <style>  
-            body {
-            font-family: Arial, sans-serif; 
-            background-color: #f0fdff;
-            text-align: center;
-            padding: 5px;  
-    } 
-         /* Header layout */   
-     .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeX Africa - Contact</title>
 
-/* Logo + name side */
-.logo-name {
-    display: flex;
-    align-items: center;
-}
+    <style>
+        /* =======================
+           BODY (BACKGROUND)
+        ======================= */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('robotics.jpg.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
 
-/* Logo image */
-.logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
+        .overlay {
+            background-color: rgba(0,0,0,0.6);
+            min-height: 100vh;
+        }
 
-/* Company name */
-.company-name {
-    font-size: 22px;
-    color: #3333cc;
-    margin: 0;
-}
+        /* =======================
+           HEADER
+        ======================= */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
 
-/* Nav bar */
-.nav {
-    background-color: #2222aa;
-            padding: 10px;
+        .logo-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .company-name {
+            color: white;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: rgba(0,0,0,0.5);
+            padding: 8px 12px;
             border-radius: 5px;
-}
+        }
 
-.nav a {
-    color: white;
-    margin: 0 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .nav a {
+            color: white;
+            margin: 0 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-h1 {
-    color: white;
-    background-color:#3333cc;
-    border: 2px solid #3333cc;
-    /* border added */
-    padding: 10pc;
-    /* space inside the border */
+        /* =======================
+           CONTAINER
+        ======================= */
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 40px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
 
-}
-   footer {
+        /* =======================
+           HEADER TEXT
+        ======================= */
+        .hero {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            color: #3333cc;
+        }
+
+        .hero p {
+            color: #555;
+        }
+
+        /* =======================
+           FORM
+        ======================= */
+        form {
+            width: 100%;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 120px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #3333cc;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #2222aa;
+        }
+
+        /* =======================
+           TRUST TEXT
+        ======================= */
+        .trust {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #555;
+            text-align: center;
+        }
+
+        /* =======================
+           FOOTER
+        ======================= */
+        footer {
+            width: 100%;
             background-color: #3333cc;
             color: white;
             padding: 15px;
-            margin-top: 30px;
-            border-radius: 0 0 10px 10px;
+            text-align: center;
         }
-</style>
-    </head>
-    <div class="header">
-    <div class="logo-name">
-        <img src="logo.png" alt="Logo" class="logo">
-        <h2 class="company-name">Digital eXplorers Africa | DeX Africa</h2>
-    </div>
 
-     <div class="nav">
+        /* =======================
+           WHATSAPP BUTTON
+        ======================= */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo-name">
+            <img src="logo.png" class="logo">
+            <h2 class="company-name">DeX Africa</h2>
+        </div>
+
+        <div class="nav">
             <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
             <a href="vision.html">Vision</a>
             <a href="values.html">Core Values</a>
         </div>
-    <body>
-    
     </div>
-    <h1> Contact Us</h1>
-    <form 
-    action="https://formspree.io/f/xzdjlqga"
-    method="POST">
-    <input type="text"
-    name="name"
-    placeholder="your name"><br><br>
-    <input
-    type="email" 
-    name="email"
-    placeholder="your email"><br><br>
-    <textarea name="message"
-    placeholder="your message here">
-   </textarea><br><br>
-   <button
-   type="submit"> send message</button>
-</form>
-   <footer>
-        <small>© 2026 Digital eXplorers Africa  kids Tech Academy</small>
-    </footer>
-    </body>
-   </html>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="hero">
+            <h1>Register Your Child</h1>
+            <p>Fill the form below to enroll your child in our tech training program.</p>
+        </div>
+
+        <!-- FORM -->
+        <form action="https://formspree.io/f/xzdjlqga" method="POST">
+         
+              <input type="hidden" name="_next" value="https://sam-robotic/DEX-Africa.github.io/thankyou.html">
+        </form>
+        
+            <label>Parent Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Child Name</label>
+            <input type="text" name="child_name" required>
+
+            <label>Message</label>
+            <textarea name="message" required></textarea>
+
+            <button type="submit">Register Now</button>
+          
+
+        <!-- TRUST MESSAGE -->
+        <div class="trust">
+            We will contact you shortly after registration. Your information is safe with us.
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 DeX Africa – Inspiring Tech Minds in Africa
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/233505708770" target="_blank" class="whatsapp-btn">
+    💬 chat with us
+</a>
+
+</body>
+</html>
