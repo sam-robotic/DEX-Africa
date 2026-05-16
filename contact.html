@@ -197,10 +197,14 @@
         </div>
 
         <!-- FORM -->
-        <form action="https://formspree.io/f/xzdjlqga" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+             <input type="hidden"name="access_key" 
+              value="71e17874-4bbc-4">
+
          
-              <input type="hidden" name="_next" value="https://sam-robotic.github.io/dex-africa/thanks.html?success=true">
-                               
+              <input type="hidden"name="_next" 
+              value="https://sam-robotic.github.io/dex-africa/thanks.html?success=true">
+
             <label>Parent Name</label>
             <input type="text" name="name" required>
 
@@ -214,8 +218,8 @@
             <textarea name="message" required></textarea>
 
             <button type="submit">Register Now</button>
-           </form>
-
+          
+            </form>
         <!-- TRUST MESSAGE -->
         <div class="trust">
             We will contact you shortly after registration. Your information is safe with us.
